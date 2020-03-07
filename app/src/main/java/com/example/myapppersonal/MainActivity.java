@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
                 String password= ((TextInputLayout)findViewById(R.id.etPassword)).toString();
                 if (usuario.equals("admin")&& password.equals("12345678"))
                 {
-                    /*Intent nuevoform = new Intent(MainActivity.this,Secundario.class);
-                    startActivity(nuevoform);*/
-                    Toast.makeText(getApplicationContext(),"Credenciales CORRECTAS",Toast.LENGTH_SHORT).show();
+                    Intent nuevoform = new Intent(MainActivity.this,Secundario.class);
+                    startActivity(nuevoform);
+                    /*Toast.makeText(getApplicationContext(),"Credenciales CORRECTAS",Toast.LENGTH_SHORT).show();*/
                 }
                 else
                 {
